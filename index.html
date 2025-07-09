@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Rock ✊ Paper ✋ Scissors ✌️</h1>
+
+    <div class="scoreboard">
+      <p>👤 You: <span id="userScore">0</span></p>
+      <p>🤖 Bot: <span id="botScore">0</span></p>
+    </div>
+
+    <div class="choices">
+      <button onclick="play('rock')">✊</button>
+      <button onclick="play('paper')">✋</button>
+      <button onclick="play('scissors')">✌️</button>
+    </div>
+
+    <div class="result" id="result">Your move?</div>
+    <div id="emoji"></div>
+
+    <button id="toggleSound">🔈 Sound</button>
+
+    <audio id="bgMusic" src="bg-music.mp3" loop></audio>
+    <audio id="clickSound" src="click.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
